@@ -31,16 +31,13 @@ The plan should include:
   output.innerHTML = "⏳ Generating your personalized plan…";
 
   try {
-    const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+    const res = await fetch("/api/groq", {
       method: "POST",
       headers: {
-        "Authorization": "Bearer YOUR_GROQ_API_KEY", // replace with your key
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "llama-3.3-70b-versatile",
-        messages: [{ role: "user", content: prompt }],
-        temperature: 0.7
+        messages: [{ role: "user", content: prompt }]
       })
     });
 
@@ -125,16 +122,13 @@ document.addEventListener("DOMContentLoaded", () => {
     appendMessage("bot", "⏳ Bot is typing...");
 
     try {
-      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      const res = await fetch("/api/groq", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer YOUR_GROQ_API_KEY", // replace with your key
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          model: "llama-3.3-70b-versatile",
-          messages: [{ role: "user", content: userMessage }],
-          temperature: 0.7
+          messages: [{ role: "user", content: userMessage }]
         })
       });
 
