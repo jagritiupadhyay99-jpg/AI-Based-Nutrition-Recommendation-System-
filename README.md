@@ -2,7 +2,7 @@
 
 Hi! We are **Team Misfits**, and this is our student project: an AI-powered Nutrition Recommendation System. We built this to help people easily get personalized diet plans and meal recommendations based on their body type, goals, and health conditions. 
 
-🔗 **[Try the Live App Here!](INSERT_YOUR_LIVE_LINK_HERE)**
+🔗 **[Try the Live App Here!](https://diet-planner-using-ai-assistance.vercel.app/)**
 
 ## 🚀 What It Does
 Our web app takes in basic details (like your height, weight, food preferences, and allergies) and uses AI to generate a fully customized meal plan in seconds. It also features a built-in AI chatbot to answer any extra nutrition questions you might have on the spot!
