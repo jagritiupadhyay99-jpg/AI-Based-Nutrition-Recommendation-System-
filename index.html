@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personalized Nutrition Assistant</title>
+  <link rel="stylesheet" href="cssofnutrition.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>🍎 Personalized Nutrition Assistant</h1>
+
+    <!-- AI Diet Plan Form -->
+    <form id="nutrition-form">
+  <input name="goal" type="text" placeholder="🎯 Your fitness/health goal" required />
+  <input name="food_preference" type="text" placeholder="🥦 Food preference (Veg / Non-Veg / Vegan)" required />
+  <input name="location" type="text" placeholder="📍 Your location (e.g. Kerala, Delhi)" required />
+  <input name="age" type="number" placeholder="🎂 Age" required />
+  <input name="gender" type="text" placeholder="🚻 Gender (Male/Female/Other)" required />
+  <input name="height" type="number" placeholder="📏 Height (cm)" required />
+  <input name="weight" type="number" placeholder="⚖ Weight (kg)" required />
+  <input name="allergies" type="text" placeholder="🚫 Allergies (If none, type 'No')" />
+  <input name="health_issues" type="text" placeholder="🩺 Health issues (If none, type 'No')" />
+  <button type="submit">Generate Plan</button>
+</form>
+
+
+    <!-- AI Response -->
+    <div id="response-box"></div>
+
+    <!-- AI Chatbot -->
+    <div class="chat-container">
+      <div id="chat-box" class="chat-box"></div>
+      <form id="chat-form">
+        <input type="text" id="chat-input" placeholder="💬 Ask a nutrition question..." autocomplete="off" required />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="scriptofnutrition.js"></script>
+</body>
+</html>
